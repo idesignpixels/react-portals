@@ -9,8 +9,8 @@ export default class AnimatedModal extends React.Component {
 
   render() {
     const { show, children, backDropClick } = this.props;
-    const willLeave = () => ({ opacity: spring(0) });
-    const willEnter = () => ({ opacity: 0 });
+    const willLeave = () => ({ opacity: spring(0), y: spring(-200) });
+    const willEnter = () => ({ opacity: 0, y: -400 });
 
     return ReactDOM.createPortal((
       <TransitionMotion
@@ -21,6 +21,7 @@ export default class AnimatedModal extends React.Component {
             key: 'a',
             style: {
               opacity: spring(1),
+              y: spring(0),
             },
           }] : []
         }
@@ -29,8 +30,8 @@ export default class AnimatedModal extends React.Component {
           if (items.length) {
             const { key, style } = items[0];
             return (
-              <div className="backdrop" key={key} style={{ ...style }} onClick={backDropClick}>
-                <div className="modal" onClick={e => e.stopPropagation()}>
+              <div className="backdrop" key={key} style={{ opacity: style.opacity }} onClick={backDropClick}>
+                <div className="modal" style={{ position: 'relative', bottom: style.y, opacity: style.opacity }} onClick={e => e.stopPropagation()}>
                   {children}
                 </div>
               </div>

@@ -41,12 +41,13 @@ export default class Main extends React.Component {
         <div className="main-wrapper wrapper">
           <div>
             <h1>React portals</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis elit sit amet nunc feugiat ornare. Aenean lobortis lobortis velit, sit amet molestie ipsum varius vitae.</p>
+            <p>This is a demonstration of React portals please see the related <a href="http://idesignpixels.com">blog post</a> or if you want to see the source code the <a href="https://github.com/idesignpixels/react-portals/tree/master">repository</a>.</p>
+            <p>An example of a basic modal</p>
             <button onClick={this.openModal}>Modal</button>
             <Modal show={this.state.modal} backDropClick={this.closeModal}>
               <Card title="Modal">
                   <CardContent>
-                    <p>Blah blah bah</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis elit sit amet nunc feugiat ornare. Aenean lobortis lobortis velit, sit amet molestie ipsum varius vitae.</p>
                   </CardContent>
                   <CardActions>
                     <CardAction label="Close" onClick={this.closeModal} />
@@ -56,12 +57,12 @@ export default class Main extends React.Component {
             </Modal>
             <br />
             <br />
-            <p>Vivamus tortor arcu, suscipit non ipsum ut, egestas interdum dolor. Maecenas aliquam molestie nisl at porttitor.</p>
+            <p>An example of a animated modal that uses the fantastic <a href="https://github.com/chenglou/react-motion">React Motion</a> package</p>
             <button onClick={this.openAnimatedModal}>Animated Modal</button>
             <AnimatedModal show={this.state.animatedModal} backDropClick={this.closeAnimatedModal}>
               <Card title="Animated Modal">
                   <CardContent>
-                    <p>Blah blah bah</p>
+                    <p>Vivamus tortor arcu, suscipit non ipsum ut, egestas interdum dolor. Maecenas aliquam molestie nisl at porttitor.</p>
                   </CardContent>
                   <CardActions>
                     <CardAction label="Close" onClick={this.closeAnimatedModal} />
@@ -69,10 +70,6 @@ export default class Main extends React.Component {
                   </CardActions>
                 </Card>
             </AnimatedModal>
-            <br />
-            <br />
-            <p>Morbi volutpat tempus nibh, eget tempor justo ornare sed. Sed viverra aliquam dolor. Sed convallis ante libero, ac ultricies est lacinia in.</p>
-            <button>Notification</button>
           </div>
         </div>
       </main>

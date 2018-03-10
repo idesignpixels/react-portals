@@ -96,6 +96,7 @@ main {
   width: 100%;
   margin: 0px;
   border: 0px;
+  border-radius: 0px;
   padding: 16px;
   text-align: center;
   background-color: transparent;
@@ -109,10 +110,11 @@ main {
 
 .cardAction:hover {
   background-color: whitesmoke;
+  color: inherit;
 }
 
 .cardActionPrimary:hover, .cardActionPrimary:active {
-  background-color: darkBlue;
+  background-color: #739fb2;
   color: white;
 }
 

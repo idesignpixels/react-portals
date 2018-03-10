@@ -39,6 +39,7 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   transition: all .25s ease;
+  outline: none;
 }
 
 button:hover {
