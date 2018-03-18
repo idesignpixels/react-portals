@@ -41,7 +41,7 @@ export default class Main extends React.Component {
         <div className="main-wrapper wrapper">
           <div>
             <h1>React portals</h1>
-            <p>This is a demonstration of React portals please see the related <a href="http://idesignpixels.com">blog post</a> or if you want to see the source code the <a href="https://github.com/idesignpixels/react-portals/tree/master">repository</a>.</p>
+            <p>This is a demonstration of React portals please see the related <a href="http://idesignpixels.com/react/js/es6/2018/03/17/react-portals" target="_blank">blog post</a> or if you want to see the source code the <a href="https://github.com/idesignpixels/react-portals/tree/master" target="_blank">repository</a>.</p>
             <p>An example of a basic modal</p>
             <button onClick={this.openModal}>Modal</button>
             <Modal show={this.state.modal} backDropClick={this.closeModal}>
@@ -57,7 +57,7 @@ export default class Main extends React.Component {
             </Modal>
             <br />
             <br />
-            <p>An example of a animated modal that uses the fantastic <a href="https://github.com/chenglou/react-motion">React Motion</a> package</p>
+            <p>An example of a animated modal that uses the fantastic <a href="https://github.com/chenglou/react-motion" target="_blank">React Motion</a> package</p>
             <button onClick={this.openAnimatedModal}>Animated Modal</button>
             <AnimatedModal show={this.state.animatedModal} backDropClick={this.closeAnimatedModal}>
               <Card title="Animated Modal">
