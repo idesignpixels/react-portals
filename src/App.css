@@ -1,3 +1,7 @@
+body {
+  background-color: whitesmoke;
+}
+
 .wrapper {
   max-width: 740px;
   margin-left: auto;
@@ -25,6 +29,10 @@ main {
   background-color: #0d394c;
   padding: 15px;
   color: white;
+}
+
+.App-header a {
+  text-decoration: none;
 }
 
 .App-header-wrapper {
